@@ -1,0 +1,124 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+  }
+  
+  #cont {
+    margin: auto;
+    text-align: center;
+  }
+  
+  #canvas-cont {
+    margin: 10px auto;
+    max-width: 30%;
+  }
+  
+  #canvas {
+    margin: 20px;
+    border: 1px solid white;
+    margin: 20px auto;
+    max-width: 100%;
+  }
+  
+  #interaction {
+    color: white;
+    font-family: "Questrial", sans-serif;
+    letter-spacing: 1px;
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  #interaction label {
+    background-color: white;
+    color: #444;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px #999;
+  }
+  
+  .slider {
+    margin: 20px 10px;
+    -webkit-appearance: none;
+    width: 50%;
+    height: 5px;
+    background: #fff;
+    outline: none;
+    border-radius: 10px;
+    -webkit-transition: .2s;
+    transition: opacity .2s;box-shadow: 0 2.5px #666;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #999;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  #reset {
+    transition: .1s;
+    padding: 10px 20px;
+    border: 0;
+    background-color: #eee;
+    color: #222;
+    border-radius: 20px;
+    font-family: "Questrial", sans-serif;
+    box-shadow: 0 6px #aaa;
+    outline: none;
+    font-size: 15px;
+    margin: 10px 0;
+  }
+  
+  #reset:active {
+    transform: translateY(5px);
+    box-shadow: 0 1px #aaa;
+  }
+  
+  footer {
+    padding: 10px;
+    background-color: #222;
+    color: #aaa;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  footer a {
+    color: white;
+  }
+  
+  
+  @media (max-width: 1200px) {
+    #canvas-cont {
+      max-width: 40%;
+    }
+  
+    #interaction {
+      width: 80%;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    #canvas-cont {
+      max-width: 90%;
+    }
+  
+    #interaction {
+      width: 80%;
+    }
+  
+    .user-input {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .user-input *{
+      width: 80%;
+      margin: 10px auto;
+    }
+  
+  }
